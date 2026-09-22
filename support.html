@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — PhotoBackup</title>
+<meta name="description" content="Help and answers for PhotoBackup.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+    <h1>Support</h1>
+    <p class="tagline">PhotoBackup</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+    </nav>
+</header>
+
+<div class="card">
+    <p><strong>Get in touch:</strong> <a href="https://github.com/JChaCreates/iosphotobackup/issues/new">report a problem or ask a question</a> (needs a free GitHub account).</p>
+    <p>Reports are public, so leave out anything personal. One person answers these, usually within a few days. Including your device, iOS version, and what you were doing at the time makes a real difference.</p>
+</div>
+
+<h2>Getting started</h2>
+
+<h3>My external drive doesn't appear when I pick a destination</h3>
+<p>In the Files picker, tap <strong>Browse</strong> at the bottom right — twice. The first tap moves you up a level, the second reveals the full list of locations, including connected drives. This is how the iOS file picker behaves generally, not something specific to this app.</p>
+<p>If the drive still isn't listed, check it appears in the Files app itself. A drive that needs more power than the device supplies may need a powered hub.</p>
+
+<h3>Which files get copied?</h3>
+<p>Common photo formats — RAW from most manufacturers, plus JPEG, HEIC, TIFF, PNG and WebP. The Supported Formats screen in the app lists them all. XMP sidecars are carried across alongside the images they belong to.</p>
+<p>Supported RAW formats are determined by iOS rather than by the app, so a very new camera may need an iOS update before its files can be previewed.</p>
+
+<h2>Backing up</h2>
+
+<h3>What happens if I unplug the card, or the app closes mid-backup?</h3>
+<p>Nothing already copied is lost. Files are written under a temporary name and only renamed once every byte has landed, so a half-written file never appears under a real filename.</p>
+<p>The next time you open the app it will offer to resume. Resuming skips everything already at the destination — which is fast — and copies only what's missing.</p>
+
+<h3>Can I stop a backup safely?</h3>
+<p>Yes. The file being copied finishes first, so nothing is left partial. Files copied so far stay where they are, and running the backup again later picks up the rest.</p>
+
+<h3>Why did it say "Backup Interrupted"?</h3>
+<p>Some files didn't make it across — most often because the card or drive was disconnected part-way. Tap through to see which. Running the backup again re-copies just those.</p>
+
+<h2>Verifying</h2>
+
+<h3>Quick or Full — which should I use?</h3>
+<p>Quick compares file sizes, which is fast and catches truncated or missing files. Full computes a SHA-256 hash of every byte of both copies, which is slower but the only way to catch a file that is the right size and still wrong.</p>
+<p>Before formatting a card, Full is the one worth the wait.</p>
+
+<h3>What does the Verified badge mean?</h3>
+<p>That file passed a backup check: the copy at the destination matched the original. The badge appears on thumbnails in Browse and in each photo's info panel, on both the original and the copy. If a file later fails a check, it loses the badge.</p>
+
+<h3>Some files didn't match. What now?</h3>
+<p>They're kept as a repair list, shown as a banner in Backup, and it survives closing the app. Tap Repair and only those files are copied again and re-checked by hash.</p>
+<p>If the same file fails twice, treat that as a hardware warning rather than a glitch. A file that won't copy correctly on two attempts usually means the card or the drive is failing — try a different drive before trusting the backup.</p>
+
+<h2>Rating and keywords</h2>
+
+<h3>Where do my stars and keywords go?</h3>
+<p>Into XMP sidecar files saved beside each photo, in the standard format Lightroom, Capture One and Bridge read. Import the folder later and your work is already there.</p>
+<p>If a photo already has a sidecar from another application, PhotoBackup edits only the rating, label and keyword fields, leaving develop settings and history untouched.</p>
+
+<h3>Can I use my own keyword list?</h3>
+<p>Yes. In Settings, under Keywords, tap <strong>Save Sample Keywords File</strong> to put a starter file in Files. It's plain text, one keyword per line, with lines starting <code>#</code> ignored so you can leave yourself notes. Edit it in any text editor, then load it back from the same screen.</p>
+
+<h3>What is Combined JPG + RAW view?</h3>
+<p>When a shot exists as both a RAW and a JPEG with the same filename, the pair is shown as one item instead of two. Ratings and keywords applied to it are written to both files.</p>
+
+<h2>Purchases</h2>
+
+<h3>What's included in the free trial?</h3>
+<p>Everything, for the length of the trial. After it ends, backup, verification, rating, keywording and XMP generation need the full version, and Browse shows the first 50 photos of a folder. Viewing, sharing and deleting your own photos stay free — your files are never held hostage.</p>
+
+<h3>I bought it but it isn't unlocked</h3>
+<p>Settings → Restore Purchases. If it reports nothing found, the purchase is most likely on a different Apple ID — sign in with that one and try again. The unlock is a one-time purchase tied to your Apple ID, so it carries to your other devices and to a reinstall.</p>
+
+<footer>
+    <p>Still stuck? <a href="https://github.com/JChaCreates/iosphotobackup/issues/new">Report a problem</a> — and see the <a href="privacy.html">privacy policy</a>.</p>
+</footer>
+
+</div>
+</body>
+</html>
