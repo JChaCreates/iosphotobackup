@@ -6,6 +6,16 @@ which the App Store requires as live public URLs.
 **This repository contains the website only.** The app's source lives
 elsewhere, in a private repository, and nothing here exposes it.
 
+## Two apps, one site
+
+Since 2026-10-10 the same site also carries the pages for **Photo Import & Share**, in the
+`photoimport/` folder, sharing the one `style.css`:
+
+- `https://jchacreates.github.io/iosphotobackup/photoimport/privacy.html`
+- `https://jchacreates.github.io/iosphotobackup/photoimport/support.html`
+
+The root pages stay PhotoBackup's. A page for either app must only describe that app.
+
 ## Publishing
 
 GitHub Pages serves this straight from the default branch — there is no build

@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Photo Import &amp; Share</title>
+<meta name="description" content="Help and answers for Photo Import & Share.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<div class="wrap">
+
+<header>
+    <h1>Support</h1>
+    <p class="tagline">Photo Import &amp; Share</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="privacy.html">Privacy</a>
+    </nav>
+</header>
+
+<div class="card">
+    <p><strong>Get in touch:</strong> email <a href="mailto:joseph@jchacreates.com">joseph@jchacreates.com</a>, or <a href="https://github.com/JChaCreates/iosphotobackup/issues/new">report a problem on GitHub</a> (needs a free GitHub account).</p>
+    <p>GitHub reports are public, so leave out anything personal. One person answers these, usually within a few days. Including your device, iOS version, camera, and what you were doing at the time makes a real difference.</p>
+</div>
+
+<h2>Getting started</h2>
+
+<h3>My card doesn't appear by itself</h3>
+<p>Most card readers are found automatically within a few seconds of plugging in; the Import tab's Source row changes to the card's name. The first time, iOS asks whether to allow the app access to the card. If you said no, change it in Settings › Privacy &amp; Security.</p>
+<p>If the card still isn't found, use <strong>Choose a Card in Files…</strong> instead. In the Files picker, tap <strong>Browse</strong> at the bottom right — twice. The first tap moves you up a level, the second reveals the full list of locations, including connected cards and drives. This is how the iOS file picker behaves generally, not something specific to this app.</p>
+<p>A reader that needs more power than the device supplies may need a powered hub.</p>
+
+<h3>Which files are imported?</h3>
+<p>Common camera formats: RAW from most manufacturers, DNG, JPEG, HEIC, TIFF, PNG and WebP, and MOV and MP4 video. The File Formats screen in the app lists them all, each with a switch so you can leave a format out. AVCHD video (the <code>.MTS</code> files some older camcorders write) isn't supported.</p>
+<p>Supported RAW formats are determined by iOS rather than by the app, so a very new camera may need an iOS update before its files can be previewed.</p>
+
+<h2>Importing</h2>
+
+<h3>How does it decide what's "Already Imported"?</h3>
+<p>That's the <strong>Duplicate Detection</strong> option in the ⋯ menu:</p>
+<ul>
+    <li><strong>File Name (Quick)</strong>, the default: an item is already imported if a file with the same name and the same capture time is in Apple Photos (or in the destination folder), or if this app imported it before. Seconds, even on a full card.</li>
+    <li><strong>Full Hash (Slow)</strong>: compares the contents of every file, so a photo that was renamed is still caught. Minutes on a big card the first time; faster after that.</li>
+    <li><strong>Off: Show Everything</strong>: no check. Everything shows as new and you choose.</li>
+</ul>
+
+<h3>Why do a RAW and a JPEG of the same shot show as one item?</h3>
+<p>Cameras set to RAW + JPEG write two files per shot. The app treats the pair as one photo, counts it as one import, and puts it into Apple Photos as one photo with the RAW kept attached — the same thing Apple's own importer does. Photos shows and edits the JPEG; on a Mac you can switch that photo to "Use RAW as Original". Imported into a folder, both files are copied.</p>
+
+<h3>What happens if I pull the card out mid-import?</h3>
+<p>The import stops cleanly and the Import tab shows a note that the card was removed. Nothing already imported is lost, and nothing half-written is left behind. Plug the card back in, tap Import Photos, and the items already brought across show as Already Imported, so you carry on with the rest.</p>
+
+<h3>Why did some items fail?</h3>
+<p>The Finished screen lists them. The usual cause is the card being disconnected part-way, or a file the camera didn't finish writing. Run the import again and only those are offered.</p>
+
+<h3>Can an import keep running while I use another app?</h3>
+<p>By default, iOS pauses the app shortly after you switch away, and the import continues when you come back. To keep it running instead, turn on <strong>Keep Running in Background</strong> in Settings, then close and reopen the app. On iOS 26 or later the progress then shows on your Lock Screen. It can use more battery, so it's off unless you need it.</p>
+
+<h3>Does the app ever change or delete anything on the card?</h3>
+<p>No. The card is only read. Deleting is for your camera to do, after you've checked the import.</p>
+
+<h3>Why can't I pick a folder on the card as the destination?</h3>
+<p>Because the app promises never to write to the card. Choose a folder on your device, in iCloud Drive, or on a different drive.</p>
+
+<h2>Apple Photos</h2>
+
+<h3>Why does it ask for full access to my photo library?</h3>
+<p>To tell which photos on the card are already in your library. With "Add Photos Only" or limited access it still imports, but has to treat everything on the card as new. You can change your answer at any time in Settings › Privacy &amp; Security › Photos.</p>
+
+<h3>Where do imported photos end up?</h3>
+<p>In your library, with the date the photo was taken, so they land in the right place in your timeline. On the Import tab you can also choose an album, or make a new one, and the import goes into it as well. The choice goes back to Photo Library each time the app is opened fresh, so an import never lands in an album you chose days ago without noticing.</p>
+
+<h2>Browsing and sharing</h2>
+
+<h3>Can I look at the card without importing?</h3>
+<p>Yes. The Browse tab opens any folder, including the card, for viewing, zooming, checking when and how a shot was taken, and sharing. Nothing is imported from there.</p>
+
+<h3>How do I share what I just imported?</h3>
+<p>The Finished screen offers <strong>Share These…</strong> for the items you just brought in. It can be switched off in Settings if you never use it.</p>
+
+<h2>Appearance and accessibility</h2>
+
+<h3>How do I switch between Light and Dark?</h3>
+<p>In Settings, under <strong>Appearance</strong>, choose Light, Dark or System. System follows your device's own setting. The full-screen photo viewer always stays dark.</p>
+
+<h3>Does it work with VoiceOver and larger text?</h3>
+<p>Yes. Every button is labelled, and text and icons follow the text size set in your device's Settings.</p>
+
+<h2>Purchases</h2>
+
+<h3>What's free, and what's the unlock?</h3>
+<p>Everything is free for 10 days with unlimited imports. After that, you can still import 5 items a day (a RAW + JPEG pair or a video counts as one), and browsing and sharing stay free. A one-time purchase removes the daily limit, forever. There is no subscription.</p>
+
+<h3>I bought it but it isn't unlocked</h3>
+<p>Settings › Restore Purchases. If it reports nothing found, the purchase is most likely on a different Apple ID — sign in with that one and try again. The unlock is tied to your Apple ID, so it carries to your other devices and to a reinstall.</p>
+
+<footer>
+    <p>Still stuck? Email <a href="mailto:joseph@jchacreates.com">joseph@jchacreates.com</a> or <a href="https://github.com/JChaCreates/iosphotobackup/issues/new">report a problem</a> — and see the <a href="privacy.html">privacy policy</a>.</p>
+</footer>
+
+</div>
+</body>
+</html>
